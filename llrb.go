@@ -18,3 +18,9 @@ type RBTree struct {
   root *rbnode
   length int
 }
+
+func NewRBTree() RBTree {
+  return RBTree{
+    root: new(rbnode),
+  }
+}
