@@ -13,6 +13,14 @@ type rbnode struct {
   parent, left, right *rbnode
 }
 
+func newRBNode(k, v interface{}, c color) *rbnode {
+  return &rbnode{
+    key: k,
+    value: v,
+    color: c,
+  }
+}
+
 func (node *rbnode) isRed() bool {
   if node == nil {
     return false
