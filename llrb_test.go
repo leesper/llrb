@@ -16,7 +16,7 @@ func TestNewRBTree(t *testing.T) {
 
 func TestIsRed(t *testing.T) {
   var nilNode *rbnode = nil
-  if nilNode.isRed() {
+  if isRed(nilNode) {
     t.Errorf("nil node is red, want black")
   }
 }
