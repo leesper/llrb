@@ -13,3 +13,10 @@ func TestNewRBTree(t *testing.T) {
     t.Errorf("rbTree.root.right is non-nil, want nil")
   }
 }
+
+func TestIsRed(t *testing.T) {
+  var nilNode *rbnode = nil
+  if nilNode.isRed() {
+    t.Errorf("nil node is red, want black")
+  }
+}

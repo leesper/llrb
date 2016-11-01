@@ -13,6 +13,13 @@ type rbnode struct {
   parent, left, right *rbnode
 }
 
+func (node *rbnode) isRed() bool {
+  if node == nil {
+    return false
+  }
+  return node.color == RED
+}
+
 // root's right child point to the root of RBTree
 type RBTree struct {
   root *rbnode
