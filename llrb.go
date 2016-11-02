@@ -108,7 +108,6 @@ func fixUp(node *rbnode) *rbnode {
   return node
 }
 
-// root's right child point to the root of RBTree
 type RBTree struct {
   root *rbnode
   length int
